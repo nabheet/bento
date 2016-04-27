@@ -4,7 +4,9 @@
 distro="`rpm -qf --queryformat '%{NAME}' /etc/redhat-release | cut -f 1 -d '-'`" 
 
 # Remove development and kernel source packages
-yum -y remove gcc cpp kernel-devel kernel-headers perl;
+#yum -y remove gcc cpp kernel-devel kernel-headers perl;
+yum install -y gcc libffi-devel openssl-devel mysql mysql-devel sqlite sqlite-devel libxml2 libxslt libxml2-devel libxslt-devel git python-devel libyaml-devel python-tools
+yum -y update
 
 if [ "$distro" != 'redhat' ]; then
   yum -y clean all;
