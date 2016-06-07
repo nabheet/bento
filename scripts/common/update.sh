@@ -1,4 +1,4 @@
-yum install -y gcc libffi-devel openssl-devel libxml2 libxslt libxml2-devel libxslt-devel git libyaml-devel libcurl-devel readline-devel gcc-c++
+yum install -y gcc libffi-devel openssl-devel libxml2 libxslt libxml2-devel libxslt-devel git libyaml-devel libcurl-devel readline-devel gcc-c++ freetype fontconfig
 yum -y update
 
 # install rbenv and ruby-build
